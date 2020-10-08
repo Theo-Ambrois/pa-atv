@@ -1,0 +1,75 @@
+.menu nav{
+  width: 100%;
+  margin: 0 auto;
+  position: sticky;
+  top: 0px;
+}
+
+.menu nav ul{
+  list-style-type: none;
+}
+
+$columns: 12;
+
+.menu{
+  @for $i from 1 through $columns {
+    &--size-is-#{$i} nav ul li{
+      width: (100 / $i) * 1%;
+    }
+  }
+}
+
+.menu nav ul li{
+  float: left;
+  text-align: center;
+  position: relative;
+}
+
+.menu nav ul::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu nav a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid transparent;
+  padding: 10px 0px;
+}
+
+.menu nav a:hover{
+  color: $bg-color-template2;
+  border-bottom: 2px solid $bg-color-template2;
+}
+
+.under{
+  display: none;
+  background-color: white;
+  box-shadow: 0px 1px 2px #CCC;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+.menu nav > ul li:hover .under{
+  display: block;
+}
+.under li{
+  float: none;
+  min-width: 100%;
+  text-align: left;
+}
+.under a{
+  padding: 10px;
+  border-bottom: none;
+}
+.under a:hover{
+  border-bottom: none;
+  background-color: RGBa(200,200,200,0.1);
+}
+.open > a::after{
+  content:" ▼";
+  font-size: 12px;
+}
+

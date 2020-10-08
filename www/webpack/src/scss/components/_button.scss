@@ -1,0 +1,29 @@
+.button{
+	text-decoration: none;
+	border-radius: 10px;
+	background-color: $bg-color-template1;
+	color: $white;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 1em;
+	font-size: rem(12);
+	letter-spacing: 0.05em;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	border: none;
+	&:hover{
+		background-color: lighten($text-color, 15%);
+	}
+	&--success{
+		background-color: $bg-color-template1;
+		&:hover{
+			background-color: lighten($bg-color-template1, 15%);
+		}
+	}
+	&--alert{
+		background-color: $red;
+		&:hover{
+			background-color: lighten($red, 15%);
+		}
+	}
+}

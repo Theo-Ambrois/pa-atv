@@ -1,0 +1,349 @@
+/:
+  controller: "default"
+  action: "default"
+  logged: true
+  role:
+    - ""
+
+/utilisateur-profile:
+  controller: "user"
+  action: "showProfile"
+  logged: true
+  role:
+    - ""
+
+/utilisateur-profile-edit:
+  controller: "user"
+  action: "editProfile"
+  logged: true
+  role:
+    - ""
+
+/utilisateur-mot-de-passe-edit:
+  controller: "user"
+  action: "editPwd"
+  logged: true
+  role:
+    - ""
+
+/remove-utilisateur:
+  controller: "user"
+  action: "remove"
+  logged: true
+  role:
+    - ""
+
+/utilisateur-list:
+  controller: "user"
+  action: "list"
+  logged: true
+  role:
+    - "user_read"
+
+/utilisateur-edit:
+  controller: "user"
+  action: "editAdmin"
+  logged: true
+  role:
+    - "user_update"
+
+/utilisateur-remove:
+  controller: "user"
+  action: "removeAdmin"
+  logged: true
+  role:
+    - "user_delete"
+
+/login:
+  controller: "user"
+  action: "login"
+  logged: false
+  role:
+    - ""
+
+/deconnexion:
+  controller: "user"
+  action: "disconnect"
+  logged: true
+  role:
+    - ""
+
+/creation-utilisateur:
+  controller: "user"
+  action: "register"
+  logged: true
+  role:
+    - "user_create"
+
+/forgotPassword:
+  controller: "user"
+  action: "forgotPwd"
+  logged: false
+  role:
+    - ""
+
+/reset-pwd:
+  controller: "user"
+  action: "resetPwd"
+  logged: false
+  role:
+    - ""
+
+/role:
+  controller: "role"
+  action: "list"
+  logged: true
+  role:
+    - "role_read"
+
+/role-edit:
+  controller: "role"
+  action: "edit"
+  logged: true
+  role:
+    - "role_update"
+
+/role-creation:
+  controller: "role"
+  action: "create"
+  logged: true
+  role:
+    - "role_create"
+
+/role-delete:
+  controller: "role"
+  action: "remove"
+  logged: true
+  role:
+    - "role_delete"
+
+/event:
+  controller: "event"
+  action: "default"
+  logged: true
+  role:
+    - ""
+
+/event/create:
+  controller: "event"
+  action: "create"
+  logged: true
+  role:
+    - "event_create"
+
+/event/show:
+  controller: "event"
+  action: "show"
+  logged: true
+  role:
+    - ""
+
+/event/edit:
+  controller: "event"
+  action: "edit"
+  logged: true
+  role:
+    - "event_update"
+
+/event/delete:
+  controller: "event"
+  action: "delete"
+  logged: true
+  role:
+    - "event_delete"
+
+/page:
+  controller: "page"
+  action: "list"
+  logged: true
+  role:
+    - "page_read"
+
+/page-creation:
+  controller: "page"
+  action: "create"
+  logged: true
+  role:
+    - "page_create"
+
+/page-modification:
+  controller: "page"
+  action: "edit"
+  logged: true
+  role:
+    - "page_update"
+
+/page-suppression:
+  controller: "page"
+  action: "delete"
+  logged: true
+  role:
+    - "page_delete"
+
+/document:
+  controller: "document"
+  action: "list"
+  logged: true
+  role:
+    - "document_read"
+
+/document-upload:
+  controller: "document"
+  action: "upload"
+  logged: true
+  role:
+    - "document_create"
+
+/document-delete:
+  controller: "document"
+  action: "delete"
+  logged: true
+  role:
+    - "document_delete"
+
+/document-download:
+  controller: "document"
+  action: "download"
+  logged: true
+  role:
+    - "document_update"
+
+/mark-creation:
+  controller: "mark"
+  action: "create"
+  logged: true
+  role:
+    - "mark_create"
+
+/mark-modification:
+  controller: "mark"
+  action: "edit"
+  logged: true
+  role:
+    - "mark_update"
+
+/mark-suppression:
+  controller: "mark"
+  action: "remove"
+  logged: true
+  role:
+    - "mark_delete"
+
+/mark:
+  controller: "mark"
+  action: "list"
+  logged: true
+  role:
+    - "mark_read"
+
+/mark-own:
+  controller: "mark"
+  action: "own"
+  logged: true
+  role:
+    - ""
+
+/installation:
+  controller: "installer"
+  action: "install"
+  logged: false
+  role:
+    - ""
+
+/planning-list:
+  controller: "planning"
+  action: "list"
+  logged: true
+  role:
+    - "planning_read"
+
+/planning-creation:
+  controller: "planning"
+  action: "create"
+  logged: true
+  role:
+    - "planning_create"
+
+/planning-suppression:
+  controller: "planning"
+  action: "remove"
+  logged: true
+  role:
+    - "planning_delete"
+
+/planning-edition:
+  controller: "planning"
+  action: "edit"
+  logged: true
+  role:
+    - "planning_update"
+
+/planning:
+  controller: "planning"
+  action: "show"
+  logged: true
+  role:
+    - ""
+/cours-creation:
+  controller: "course"
+  action: "create"
+  logged: true
+  role:
+    - "planning_create"
+
+/cours-modification:
+  controller: "course"
+  action: "edit"
+  logged: true
+  role:
+    - "planning_update"
+
+/cours-suppression:
+  controller: "course"
+  action: "remove"
+  logged: true
+  role:
+    - "planning_delete"
+
+/sitemap/create:
+  controller: "sitemap"
+  action: "create"
+  logged: true
+  role:
+    - ""
+
+/menu-creation:
+  controller: "menu"
+  action: "create"
+  logged: true
+  role:
+    - "page_create"
+
+/menu-list:
+  controller: "menu"
+  action: "list"
+  logged: true
+  role:
+    - "page_read"
+
+/menu-suppression:
+  controller: "menu"
+  action: "delete"
+  logged: true
+  role:
+    - "page_delete"
+
+/menu-edition:
+  controller: "menu"
+  action: "edit"
+  logged: true
+  role:
+    - "page_update"
+
+/onglet-position:
+  controller: "menu"
+  action: "modifyPosition"
+  logged: true
+  role:
+    - "page_update"
+

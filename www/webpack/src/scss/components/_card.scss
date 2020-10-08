@@ -1,0 +1,44 @@
+.card {
+  justify-content: space-between;
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .25);
+  padding: 15px 5px;
+  min-width: 100%;
+  max-width: 100%;
+  &--isHalf {
+    height: 50vh;
+  }
+  &--isBig {
+    height: 35vh;
+  }
+  &--isMedium {
+    height: 25vh;
+  }
+  &--isSmall {
+    height: 15vh;
+  }
+  &--isFull {
+    height: 85vh;
+  }
+}
+
+.card-text {
+  text-align: center;
+  font-size: rem(24);
+  &--with-bottom-line{
+    border: 1px none #E5E5E5;
+    padding-bottom: 0.75rem;
+    border-bottom-style: solid;
+  }
+  &--small {
+    font-size: rem(14);
+  }
+}
+
+.card-icon {
+  min-width: 50px;
+  max-width: 50px;
+  margin: auto 0;
+  border-radius: 50%;
+}
